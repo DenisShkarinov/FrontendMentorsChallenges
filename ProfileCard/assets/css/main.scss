@@ -5,6 +5,189 @@ $darkDesaturatedBlue: hsl(229, 23%, 23%);
 $darkBlue: hsl(227, 10%, 46%);
 $darkGray: hsl(0, 0%, 59%);
 
+*, ::before, ::after {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
 body {
+   font-family: 'Kumbh Sans', sans-serif;
    font-size: 18px;
+   width: 100vw;
+   height: 100vh;
+   background-color: $darkCyan;
+   position: relative;   
+
+   span {
+      font-weight: 400;
+   }
+   .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+   }
+   img {
+      max-width: 100%;
+   }
+}
+.card-wrapper {
+   position: relative;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 100%;
+   height: 100%;
+
+   z-index: 1;
+   overflow: hidden;
+
+   .card-body {
+      width: clamp(310px, 350px, 350px);
+      height: 375px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px $darkDesaturatedBlue;
+      
+      .card-header {
+         height: 140px;
+         position: relative;
+
+         .card-header__img {
+            img {
+               position: absolute;
+               left: 0; right: 0; bottom: -36%;
+               margin: auto;
+               border-radius: 50%;
+               border: 5px solid #fff;
+               background-color: #fff;
+            }
+         }
+         &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(../Images/bg-pattern-card.svg) center/cover no-repeat;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+         }
+      }
+      .card-description {
+         margin-top: 20%;
+         text-align: center;
+         .card-description__title {
+            padding-top: 5px;
+            h2 {
+               color: $darkDesaturatedBlue;
+               font-size: 18px;
+               font-weight: 600;
+            }
+            h4 {
+               color: $darkGray;
+               font-size: 16px;
+               font-weight: 500;
+               margin-top: 10px;
+               letter-spacing: -1px;
+            }
+         }
+         .card-description__info {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 1.1em;
+            padding-top: 1.3em;
+
+            .col-3 {
+               flex-basis: 30%;
+
+               h2 {
+                  font-size: 18px;
+                  font-weight: 600;
+                  margin-top: 3px;
+               }
+               span {
+                  color: $darkGray;
+                  font-size: 11px;
+                  letter-spacing: 1px;
+               }
+            }
+            &::before {
+               content: '';
+               position: absolute;
+               top: 0; left: 0;
+               width: 100%;
+               height: 1px;
+               background-color: $darkGray;
+               opacity: 0.3;
+            }
+         }
+      }
+   }
+   .top, .bottom {
+      position: absolute;
+      z-index: -1;
+   }
+   .top {
+      left: -24%;
+      top: -44%;
+   }
+   .bottom {
+      right: -20%;
+      bottom: -56%;
+   }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 440px) {
+   .card-wrapper {
+      .top {
+         top: -25%;
+         left: -40%;
+      }
+      .bottom {
+         right: -40%;
+         bottom: -25%;
+      }
+   }
+}
+@media only screen and (min-width: 440px) and (max-width: 640px) {
+   .card-wrapper {
+      .top {
+         top: -30%;
+         left: -50%;
+      }
+      .bottom {
+         right: -50%;
+         bottom: -30%;
+      }
+   }
+}
+@media only screen and (min-width: 640px) and (max-width: 840px) {
+   .card-wrapper {
+      .top {
+         top: -35%;
+         left: -60%;
+      }
+      .bottom {
+         right: -60%;
+         bottom: -35%;
+      }
+   }
+}
+@media only screen and (min-width: 840px) and (max-width: 1100px) {
+   .card-wrapper {
+      .top {
+         top: -40%;
+         left: -50%;
+      }
+      .bottom {
+         right: -50%;
+         bottom: -40%;
+      }
+   }
 }
