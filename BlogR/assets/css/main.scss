@@ -1,0 +1,38 @@
+*, ::after, ::before {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+// fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+$ubuntu: 'Ubuntu', sans-serif;
+$overpass: 'Overpass', sans-serif;
+
+// colors
+// primary
+$light-red: #ff525d;
+$vl-red: #ff7a85;
+$dark-blue: #1f3f5b;
+//neutral
+$grayishBlue: #c8c8cb;
+$vd-grayishBlue: #4b5862;
+$vdd-blue: #25252d;
+// gradients
+$mobileNav: linear-gradient(90deg,#ff8f70,#ff3d54);
+$background: linear-gradient(90deg, #2c2d3f, #3f4164);
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-size: 16px;
+
+}
+.container {
+   margin: 0 auto;
+   max-width: 1440px;
+}
