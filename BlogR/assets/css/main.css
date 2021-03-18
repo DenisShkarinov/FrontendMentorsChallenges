@@ -11,10 +11,197 @@ html {
 }
 
 body {
+  font-family: "Ubuntu", sans-serif;
   font-size: 16px;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body a, body button {
+  text-transform: capitalize;
+}
+
+body h1, body h2, body h3, body h4 {
+  font-family: "Overpass", sans-serif;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1440px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header a {
+  color: #fff;
+  font-weight: 600;
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+header a:hover > img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+header a img {
+  margin-left: 0.4em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 170px;
+  padding: 0 11%;
+}
+
+header nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .links .nav-list {
+  margin-left: 3.5em;
+}
+
+header nav .links .nav-list li {
+  display: inline-block;
+  padding-right: 1.3em;
+}
+
+header nav .links .nav-list li:hover > .parent-child {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+header nav .links .nav-list .nav-list__parent {
+  position: relative;
+}
+
+header nav .links .nav-list .parent-child {
+  position: absolute;
+  top: 2em;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background-color: #fff;
+  border-radius: .5em;
+  padding: 1.5em;
+  -webkit-box-shadow: 0 0 15px #1f3f5b;
+          box-shadow: 0 0 15px #1f3f5b;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+header nav .links .nav-list .parent-child li {
+  margin-bottom: 1em;
+}
+
+header nav .links .nav-list .parent-child li a {
+  color: #1f3f5b;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header nav .links .nav-list .parent-child li a:hover {
+  color: #25252d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+header nav .user-block a {
+  margin-right: 2em;
+}
+
+#hero-section {
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(90deg, #ff8f70, #ff3d54);
+  height: 600px;
+  position: relative;
+}
+
+#hero-section .title {
+  position: relative;
+  padding-top: 235px;
+  z-index: 1;
+  text-align: center;
+}
+
+#hero-section .title h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 60px;
+  margin-bottom: 0.7rem;
+}
+
+#hero-section .title p {
+  color: #fff;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+#hero-section::before {
+  content: '';
+  background: url(../images/bg-pattern-intro.svg) no-repeat;
+  background-position: 25% 52%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: .8em 2.2em;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #ff525d;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.empty {
+  background: transparent;
+  border-color: transparent;
+  color: #1f3f5b;
 }
