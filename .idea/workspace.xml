@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d23bc44a-48f0-4a40-872c-693c43f7d582" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/countdown-timer/babel-plugin-macros.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countdown-timer/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countdown-timer/src/Components/Link.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countdown-timer/src/Components/List.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countdown-timer/src/Components/TimerBLock.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countdown-timer/src/Components/TimerBox.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countdown-timer/src/Components/TimerFooter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countdown-timer/src/Components/TimerHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/countdown-timer/src/Utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CountdownTimer/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CountdownTimer/assets/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CountdownTimer/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/CountdownTimer/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-notifier/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app-notifier/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-notifier/src/components/Notification.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app-notifier/src/components/Notification.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-notifier/src/components/NotificationModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app-notifier/src/components/NotificationModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/countdown-timer/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/countdown-timer/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/countdown-timer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/countdown-timer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/countdown-timer/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/countdown-timer/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/countdown-timer/src/CountdownTimer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/countdown-timer/src/CountdownTimer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/countdown-timer/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/countdown-timer/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/countdown-timer/src/index.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OhCJkoPhgH3pgDh8fllmKC8mOT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d23bc44a-48f0-4a40-872c-693c43f7d582" name="Changes" comment="" />
+      <created>1682003357810</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682003357810</updated>
+      <workItem from="1682003360788" duration="83000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

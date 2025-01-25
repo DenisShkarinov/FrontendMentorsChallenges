@@ -30,7 +30,10 @@ window.addEventListener('DOMContentLoaded', () => {
          daysLeft--;
          hours = 24
       }
-      if (daysLeft == 0 && hours == 0 && minutes == 0 && seconds == 0) {
+      if (daysLeft <= 0) {
+         daysLeft = 0;
+      }
+      if (hours == 0 && minutes == 0 && seconds == 0) {
          const title = document.querySelector('.timer-header > h2');
          title.innerHTML = "HAPPY new Year!"
          clearInterval();

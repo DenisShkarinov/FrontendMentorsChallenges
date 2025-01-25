@@ -26,31 +26,37 @@ $darkerBlue: hsl(237, 18%, 26%);
 body {
    font-family: 'Red Hat Text', sans-serif;
    font-size: 14px;
+   min-height: 100vh;
+   background: url(./img/bg-stars.svg), linear-gradient(to top, $darkBlueDesaturated, $darkBlue) no-repeat;
    li {
       list-style: none;
    }
    img {
       max-width: 100%;
    }
+   h2 {
+      color: #ffffff;
+      letter-spacing: 8px;
+      line-height: 1.5em;
+      text-transform: uppercase;
+   }
+   a {
+      color: $blue;
+      font-size: 26px;
+      transition: all .3s;
+      &:hover {
+         color: $softRed;
+         transition: all .3s;
+      }
+   }
 }
 
 .container {
-   background: url(../img/bg-stars.svg), linear-gradient(to top, $darkBlueDesaturated, $darkBlue) no-repeat;
    height: 100vh;
    max-width: 1440px;
    margin: 0 auto;
    position: relative;
-   .timer-header {
-      padding-top: 5em;
-      padding-bottom: 5em;
-      text-align: center;
-      h2 {
-         color: #ffffff;
-         letter-spacing: 8px;
-         line-height: 1.5em;
-         text-transform: uppercase;
-      }
-   }
+
    .timer-block {
       display: flex;
       flex-flow: row wrap;
@@ -66,7 +72,7 @@ body {
          height: 150px;
          text-align: center;
          margin: 1.5em;
-         
+
          .timer-box__content {
             position: relative;
             width: 100%;
@@ -129,77 +135,6 @@ body {
    }
 
 }
-
-
-.timer-box {
-   position: relative;
-   flex-basis: 20%;
-   max-width: 150px;
-   min-width: 100px;
-   height: 150px;
-   text-align: center;
-   margin: 1.5em;
-
-   .timer-box__content {
-         position: relative;
-         width: 100%;
-         height: 100%;
-         background: linear-gradient(to bottom, $darkBlueDesaturated, $darkerBlue);
-         border-radius: 10px;
-         box-shadow: 0 10px 3px  $darkBlue;
-         overflow: hidden;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-
-         &:before {
-            content: '';
-            position: absolute; left: -5px; top: 0;
-            bottom: 0;
-            margin: auto;
-            width: 10px;
-            height: 10px;
-            background-color: $darkBlue;
-            border-radius: 50%;
-         }
-         &:after {
-            content: '';
-            position: absolute; right: -5px; top: 0;
-            bottom: 0;
-            margin: auto;
-            width: 10px;
-            height: 10px;
-            background-color: $darkBlue;
-            border-radius: 50%;
-         }
-         h2 {
-            color: $softRed;
-            font-size: 80px;
-         }
-      }
-
-   h3 {
-         position: absolute;
-         bottom: -2.5em; left: 0; right: 0;
-         margin: auto;
-         color: $blue;
-         letter-spacing: 5px;
-         text-transform: uppercase;
-      }
-   &::before {
-         content: "";
-         position: absolute;
-         top: 0; bottom: 0;
-         left: 5px;
-         margin: auto;
-         width: calc(100% - 10px);
-         height: 1px;
-         background-color: $darkBlue;
-         z-index: 1;
-         opacity: 0.3;
-      }
-}
-
 
 @media only screen and (min-width: 340px) and (max-width: 640px) {
    .container {
